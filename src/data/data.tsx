@@ -1,18 +1,18 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
-  CalendarIcon,
+  // BuildingOffice2Icon,
+  // CalendarIcon,
   FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Agustin Becerra resume',
+  description: "This is Agustin Becerra Software Developer page resume",
 };
 
 /**
@@ -69,16 +69,17 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Agustin Becerra.`,
+  name: `I'm Agustin Becerra. yooo`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Nueve Helvecia based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Nueve Helvecia based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
+        with experience from tech giants to dynamic startups, I combine diverse tech insights into innovative software
+        development. Proficient in Docker, JavaScript, React, and exploring blockchain, I champion groundbreaking 
+        approaches.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">calhistenic</strong>,
+        In my free time time, you can catch me training in <strong className="text-stone-100">calisthenic</strong>,
         petting my <strong className="text-stone-100">dogs</strong>, or exploring this beautiful{' '}
         <strong className="text-stone-100">world</strong>.
       </p>
@@ -86,7 +87,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/agustin-becerra-resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +105,20 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `
+  With over 8 years in full stack development, I've extensively used NodeJS, React, Redux (among others) mastering the 
+  intricacies of crafting projects from inception, leveraging the latest technologies. My expertise in TypeScript, OOP, 
+  and microservices architecture underscores my proficiency. Furthermore, my rich experience with version control systems 
+  and adeptness in building responsive, adaptive web applications aligns perfectly with industry best practices. My 
+  excellent team communication, combined with leadership capabilities, has consistently ensured clarity and fostered 
+  collaboration on intricate projects. My work with communication platforms further accentuates my versatility. Offering 
+  not just the skills but a seasoned, innovative approach, I'm ready to make a meaningful impact.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Nueva Helvecia', Icon: MapIcon},
+    {label: 'Nationality', text: 'Uruguayian / Spanish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Farming, Blockchain, cooking', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of the Republic (UDELAR)', Icon: AcademicCapIcon},
+    // {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -125,16 +130,16 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
+        name: 'Spanish',
+        level: 10,
+      },
+      {
         name: 'English',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
+        name: 'Portuguese',
+        level: 6,
       },
     ],
   },
@@ -142,16 +147,16 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
+        name: 'Typescript',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'React',
+        level: 8,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Angular',
+        level: 7,
       },
     ],
   },
@@ -160,32 +165,32 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 8,
+        level: 9,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'ExpressJs',
+        level: 10,
       },
       {
-        name: 'Golang',
+        name: 'Solidity',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'DevOps',
     skills: [
       {
-        name: 'React Native',
+        name: 'Heroku',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Docker',
+        level: 7,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Microsoft Azure',
+        level: 6,
       },
     ],
   },
@@ -268,40 +273,89 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2018',
+    location: 'Universidad de la Republica (UDELAR), Uruguay',
+    title: 'Computer Information Systems Analyst',
+    content: <p>Gaining expertise in algorithms, data structures, and programming. 
+      He delved deep into optimizing performance, understanding operating systems,
+      and mastering software engineering principles. This foundation has equipped 
+      him to excel in the tech realm.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'September 2021 - Present',
+    location: 'Halo Media LLC - New York, USA (remote)',
+    title: 'Software Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <>
+        <p>
+          Developed solutions mainly for a white label ticket selling company with Js technologies and embedded apps.
+        </p>
+        <ul>
+          <li><span>• </span>Embed React apps within different webs pages (Angular, React, Wordpress) to buy ticket for concerts or itinerant shows.</li>
+          <li><span>• </span>Integrated different payment platforms such as Stripe, Square, among others.</li>
+          <li><span>• </span>Worked and created pipelines on Heroku and Netlify.</li>
+          <li><span>• </span>Team Leader of the Affinity Group Food & Beverage Community.</li>
+        </ul>
+      </>      
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'August 2018 - September 2021',
+    location: 'RYPT - Dublin, Ireland',
+    title: 'Full stack Developer & Technical Leader',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <>
+        <p>
+          Technical leader & Architect of RYPT Front End Web app. A web app that
+          lets trainers follow up with their athletes and create workouts, exercises,
+          graphs of performance, and other BI features that are constantly evolving.
+        </p>
+        <ul>
+          <li><span>• </span>Created from scratch the Front End App using angular 2, evolved and maintained through time to the latest angular version, with Microsoft Azure Docker pipeline.</li>
+          <li><span>• </span>Implemented Stripe payment method.</li>
+          <li><span>• </span>Created a test suite on the Microsoft Azure pipeline with Jest Framework on Puppeteer, a Headless browser.</li>
+          <li><span>• </span>Worked on the Back End based on ExpressJs over NodeJS.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    date: 'February 2017 - June 2018',
+    location: 'OneTree - Montevideo, Uruguay',
+    title: 'Frontend Developer',
+    content: (
+      <>
+        <p>
+          Helped to develop different Agile engineering projects for U.S. companies that wanted excellent UX/UI and performance.
+        </p>
+        <ul>
+          <li><span>• </span>Worked on different projects with different technologies such as AngularJS, Angular2+, NodeJs, React, etc</li>
+          <li><span>• </span>Completed detailed programming and development tasks for front end and websites.</li>
+          <li><span>• </span>Leveraged expertise in software design and development with multiple programming languages</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    date: 'August 2018 - September 2021',
+    location: 'Cisco Systems Inc. - Galway, Ireland',
+    title: 'Software Engineer Intern',
+    content: (
+      <>
+        <p>
+          Worked as a Software Engineer developing a Windows client application
+          called Jabber, using the Scrum development process.
+        </p>
+        <ul>
+          <li><span>• </span>Learned from top-notch Cisco engineers about software-engineered processes and the product development life cycle.</li>
+          <li><span>• </span>Work on a large-scale Agile engineering project on a highly usable, top- quality enterprise product.</li>
+          <li><span>• </span>Programmed on C# and .NET</li>
+          <li><span>• </span>Workshop of Windows dump file debugging on assembler</li>
+        </ul>
+      </>
     ),
   },
 ];
@@ -313,18 +367,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Aengus Bates - coworker at Cisco',
+      text: 'I had the pleasure of working alongside Agustin for six months while he interned at Cisco, Galway. During that time he showed himself to be a talented developer, well capable of delivering quality, tested functionality on time and to spec. He was a strong contributor to the project and as a friendly, outgoing person was also a positive addition to the team.',
+      image: 'https://media.licdn.com/dms/image/D5603AQG38MEQxkl2tg/profile-displayphoto-shrink_100_100/0/1684628999716?e=1703721600&v=beta&t=o0OdV7KbAYnvH5Pk6akF7vmF7WMvridHI_q76lebSsU',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Cristina Bermudez',
+      text: "During his tenure with RYPT, he consistently showcased exceptional technical prowess, driving key initiatives that bolstered our platform's performance. A true asset to the team!",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Johnathan Franco -  Technical Leader',
+      text: "His innovative approaches at HALO not only streamlined our processes but also fostered a collaborative environment. His expertise was pivotal in our project's success.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -356,7 +410,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Github,
       text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      href: 'https://github.com/agusbece',
     },
   ],
 };
@@ -365,9 +419,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: contact.items[3].href || ''},
+  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/agustin-becerra-gonzalez/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
