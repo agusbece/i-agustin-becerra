@@ -13,7 +13,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/header-blockchain-2.png'
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -92,11 +92,11 @@ export const heroData: Hero = {
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
+    // {
+    //   href: `#${SectionId.Contact}`,
+    //   text: 'Contact',
+    //   primary: false,
+    // },
   ],
 };
 
