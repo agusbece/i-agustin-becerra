@@ -62,14 +62,11 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
 
   const handleItemClick = useCallback(
     (event: MouseEvent<HTMLElement>) => {
-      if (url === '') {
+      if (mobile && !showOverlay) {
+        event.preventDefault();
+        setShowOverlay(!showOverlay);
+      } else if (url === '') {
         event.preventDefault(); // Prevent the default action if url is empty
-      } else {
-        if (mobile && !showOverlay && url) {
-          event.preventDefault();
-          setShowOverlay(!showOverlay);
-        }
-        // setOpenModal(true);
       }
     },
     [mobile, showOverlay, url],

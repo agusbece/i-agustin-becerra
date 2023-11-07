@@ -74,7 +74,7 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Nueve Helvecia based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
         with experience from tech giants to dynamic startups, I combine diverse tech insights into innovative software
-        development. Proficient in Docker, Typescript, React, Angular, Redux, MongoDB among others and now exploring blockchain, I champion groundbreaking 
+        development. Proficient in Docker, Typescript, React, Angular, Redux, MongoDB among others, and now exploring blockchain, I champion groundbreaking 
         approaches.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
