@@ -8,6 +8,7 @@ import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
+import ModalProps from '../Utils/modal/modal';
 
 const Portfolio: FC = memo(() => {
   return (
@@ -42,6 +43,14 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
+  const [openModal, setOpenModal] = useState(false);
+
+  // Define your callback using useCallback and specify dependencies
+  const handleDelete = useCallback(() => {
+    console.log(`yo brodiss`);
+    setOpenModal(false);
+  }, []); // If setOpenModal never changes, you can leave the dependencies array empty
+
 
   useEffect(() => {
     // Avoid hydration styling errors by setting mobile in useEffect
@@ -53,12 +62,17 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
 
   const handleItemClick = useCallback(
     (event: MouseEvent<HTMLElement>) => {
-      if (mobile && !showOverlay) {
-        event.preventDefault();
-        setShowOverlay(!showOverlay);
+      if (url === '') {
+        event.preventDefault(); // Prevent the default action if url is empty
+      } else {
+        if (mobile && !showOverlay && url) {
+          event.preventDefault();
+          setShowOverlay(!showOverlay);
+        }
+        // setOpenModal(true);
       }
     },
-    [mobile, showOverlay],
+    [mobile, showOverlay, url],
   );
 
   return (
@@ -68,7 +82,7 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
         {'opacity-0 hover:opacity-80': !mobile},
         showOverlay ? 'opacity-80' : 'opacity-0',
       )}
-      href={url}
+      href={url || undefined}
       onClick={handleItemClick}
       ref={linkRef}
       target="_blank">
@@ -77,8 +91,16 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
           <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
           <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>
         </div>
-        <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
+        { url && (
+          <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
+        )}
       </div>
+      { openModal && (
+        <ModalProps 
+            handleDelete={handleDelete}
+            text="yooo"
+          ></ModalProps>
+      )}
     </a>
   );
 });
