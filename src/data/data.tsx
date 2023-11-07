@@ -200,7 +200,7 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'FIBA',
+    title: 'FIBA WC-2023',
     description: 'Collaborated on the different ticketing app layers within a monorepo architecture.',
     url: '',
     image: porfolioImage1,
@@ -219,7 +219,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Funbox',
-    description: 'Create a widget to sell tickets based on biolerplate app, and redesign theme to match client preferences',
+    description: 'Create a widget to sell tickets based on boilerplate app, and redesign theme to match client preferences',
     url: '',
     image: porfolioImage5,
   },
