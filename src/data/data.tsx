@@ -126,23 +126,6 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'Spanish',
-        level: 10,
-      },
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'Portuguese',
-        level: 6,
-      },
-    ],
-  },
-  {
     name: 'Frontend development',
     skills: [
       {
@@ -151,11 +134,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'React',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Angular',
-        level: 7,
+        level: 8,
       },
     ],
   },
@@ -171,8 +154,8 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'Solidity',
-        level: 4,
+        name: 'Java',
+        level: 6,
       },
     ],
   },
@@ -190,6 +173,57 @@ export const skills: SkillGroup[] = [
       {
         name: 'Microsoft Azure',
         level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Databases',
+    skills: [
+      {
+        name: 'MongoDB',
+        level: 9,
+      },
+      {
+        name: 'PostgreSQL',
+        level: 8,
+      },
+      {
+        name: 'Solidity',
+        level: 4,
+      },
+    ],
+  },
+  {
+    name: 'Spoken languages',
+    skills: [
+      {
+        name: 'Spanish',
+        level: 10,
+      },
+      {
+        name: 'English',
+        level: 10,
+      },
+      {
+        name: 'Portuguese',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Soft skills',
+    skills: [
+      {
+        name: 'Scrum',
+        level: 9,
+      },
+      {
+        name: 'Remote work',
+        level: 10,
+      },
+      {
+        name: 'Agile Methodologies',
+        level: 8,
       },
     ],
   },
