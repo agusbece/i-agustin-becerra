@@ -258,8 +258,8 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage5,
   },
   {
-    title: '',
-    description: 'Always ready for travel',
+    title: 'Microsoft Azure - RYPT',
+    description: "I've managed and created different pipelines during my work at RYPT",
     url: '',
     image: porfolioImage3,
   },
@@ -268,18 +268,6 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Ticketing widget. Improved development pipeline. Developed features on request.',
     url: '',
     image: porfolioImage6,
-  },
-  {
-    title: 'Careangel',
-    description: 'Developed features and fix bugs for the front end app in AngularJs while working in OneTree',
-    url: '',
-    image: porfolioImage8,
-  },
-  {
-    title: 'POC - Halo',
-    description: 'Developed a proof of concept digital line, to raffle incoming seasonal shoes.',
-    url: '',
-    image: porfolioImage7,
   },
   {
     title: '',
@@ -293,12 +281,18 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://www.youtube.com/watch?v=YbrFzbGkSjk',
     image: porfolioImage10,
   },
-  // {
-  //   title: 'Project title 11',
-  //   description: 'Give a short description of your project here.',
-  //   url: '',
-  //   image: porfolioImage11,
-  // },
+  {
+    title: 'Careangel',
+    description: 'Developed features and fix bugs for the front end app in AngularJs while working in OneTree',
+    url: '',
+    image: porfolioImage8,
+  },
+  {
+    title: 'POC - Halo',
+    description: 'Developed a proof of concept digital line, to raffle incoming seasonal shoes.',
+    url: '',
+    image: porfolioImage7,
+  },
 ];
 
 /**
@@ -407,12 +401,12 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Cristina Bermudez',
       text: "During his tenure with RYPT, he consistently showcased exceptional technical prowess, driving key initiatives that bolstered our platform's performance. A true asset to the team!",
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      image: 'https://media.licdn.com/dms/image/C4D03AQEQJhT6wSp6sA/profile-displayphoto-shrink_400_400/0/1602510702551?e=1704931200&v=beta&t=V-nIeaKQYlWNVFGWN-uFHuQ3o8z8GqSY2JaEMy_DmPs',
     },
     {
       name: 'Johnathan Franco -  Technical Leader',
       text: "His innovative approaches at HALO not only streamlined our processes but also fostered a collaborative environment. His expertise was pivotal in our project's success.",
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      image: 'https://media.licdn.com/dms/image/D4D03AQEcehooSO8C8w/profile-displayphoto-shrink_100_100/0/1679451416466?e=1704931200&v=beta&t=mslaOQNd-QX-Ox_xigwfqQ7Eld80H9UUwkpy4g7N_2I',
     },
   ],
 };
