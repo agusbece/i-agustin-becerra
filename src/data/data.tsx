@@ -72,13 +72,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Nueve Helvecia based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
+        I'm a Nueva Helvecia based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
         with experience from tech giants to dynamic startups, I combine diverse tech insights into innovative software
         development. Proficient in Docker, Typescript, React, Angular, Redux, MongoDB among others, and now exploring blockchain, I champion groundbreaking 
         approaches.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">calisthenic</strong>,
+        In my free time time, you can catch me training <strong className="text-stone-100">calisthenic</strong>,
         petting my <strong className="text-stone-100">dogs</strong>, or exploring this beautiful{' '}
         <strong className="text-stone-100">world</strong>.
       </p>
