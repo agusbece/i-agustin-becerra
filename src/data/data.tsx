@@ -72,7 +72,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Nueva Helvecia based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
+        I'm an Uruguayian based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
         with experience from tech giants to dynamic startups, I combine diverse tech insights into innovative software
         development. Proficient in Docker, Typescript, React, Angular, Redux, MongoDB among others, and now exploring blockchain, I champion groundbreaking 
         approaches.
@@ -113,7 +113,7 @@ export const aboutData: About = {
   collaboration on intricate projects. My work with communication platforms further accentuates my versatility. Offering 
   not just the skills but a seasoned, innovative approach, I'm ready to make a meaningful impact.`,
   aboutItems: [
-    {label: 'Location', text: 'Nueva Helvecia', Icon: MapIcon},
+    {label: 'Location', text: 'Nueva Helvecia, Uruguay', Icon: MapIcon},
     {label: 'Nationality', text: 'Uruguayian / Spanish', Icon: FlagIcon},
     {label: 'Interests', text: 'Farming, Blockchain, cooking', Icon: SparklesIcon},
     {label: 'Study', text: 'University of the Republic (UDELAR)', Icon: AcademicCapIcon},
