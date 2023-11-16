@@ -312,7 +312,23 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'September 2021 - Present',
+    date: 'July 2023 - Present',
+    location: 'Criptala - Montevideo, Uruguay',
+    title: 'Software Engineer Consultant',
+    content: (
+      <>
+        <p>
+          Contracted to enhance development workflows and produce comprehensive documentation for applications.
+        </p>
+        <ul>
+          <li><span>• </span>Improved developing pipelines and added hooks to improve code maintainability.</li>
+          <li><span>• </span>Create documentation and generate new developing flows.</li>
+        </ul>
+      </>      
+    ),
+  },
+  {
+    date: 'September 2021 - September 2023',
     location: 'Halo Media LLC - New York, USA (remote)',
     title: 'Software Engineer',
     content: (
