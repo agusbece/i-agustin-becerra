@@ -322,7 +322,7 @@ export const experience: TimelineItem[] = [
         </p>
         <ul>
           <li><span>• </span>Improved developing pipelines and added hooks to improve code maintainability.</li>
-          <li><span>• </span>Create documentation and generate new developing flows.</li>
+          <li><span>• </span>Created documentation and generated new developing flows.</li>
         </ul>
       </>      
     ),
