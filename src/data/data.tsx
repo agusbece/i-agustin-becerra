@@ -13,7 +13,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background-blockchain.jpg'
+import heroImage from '../images/header-background-blockchain.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -44,7 +44,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Agustin Becerra resume',
-  description: "This is Agustin Becerra Software Developer page resume",
+  description: 'This is Agustin Becerra Software Developer page resume',
 };
 
 /**
@@ -72,14 +72,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm an Uruguayian based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
-        with experience from tech giants to dynamic startups, I combine diverse tech insights into innovative software
-        development. Proficient in Docker, Typescript, React, Angular, Redux, MongoDB among others, and now exploring blockchain, I champion groundbreaking 
-        approaches.
+        I'm an Uruguayian based <strong className="text-stone-100">Full Stack Software Engineer</strong>, with
+        experience from tech giants to dynamic startups, I combine diverse tech insights into innovative software
+        development. Proficient in Docker, Typescript, React, Angular, Redux, MongoDB among others, and now exploring
+        blockchain, I champion groundbreaking approaches.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training <strong className="text-stone-100">calisthenic</strong>,
-        petting my <strong className="text-stone-100">dogs</strong>, or exploring this beautiful{' '}
+        In my free time time, you can catch me training <strong className="text-stone-100">calisthenic</strong>, petting
+        my <strong className="text-stone-100">dogs</strong>, or exploring this beautiful{' '}
         <strong className="text-stone-100">world</strong>.
       </p>
     </>
@@ -188,7 +188,7 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'Solidity',
+        name: 'OpenLink Virtuoso',
         level: 4,
       },
     ],
@@ -211,10 +211,10 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Soft skills',
+    name: 'Additional Expertise',
     skills: [
       {
-        name: 'Scrum',
+        name: 'Agile Methodologies',
         level: 9,
       },
       {
@@ -222,8 +222,8 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'Agile Methodologies',
-        level: 8,
+        name: 'Solidity',
+        level: 6,
       },
     ],
   },
@@ -241,7 +241,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Spartan',
-    description: 'Implemented new stripe payment. Improved code readability and deploying pipeline. Worked on middleware to normalize data.',
+    description:
+      'Implemented new stripe payment. Improved code readability and deploying pipeline. Worked on middleware to normalize data.',
     url: 'https://uk.spartan.com/en',
     image: porfolioImage2,
   },
@@ -253,7 +254,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Funbox',
-    description: 'Create a widget to sell tickets based on boilerplate app, and redesign theme to match client preferences',
+    description:
+      'Create a widget to sell tickets based on boilerplate app, and redesign theme to match client preferences',
     url: '',
     image: porfolioImage5,
   },
@@ -277,7 +279,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Jabber PRT - Ciscto Systems',
-    description: 'One of my mains tasks during my internship in Cisco, was to redesign and update the PRT (Problem Resolve Tool) of Jabber',
+    description:
+      'One of my mains tasks during my internship in Cisco, was to redesign and update the PRT (Problem Resolve Tool) of Jabber',
     url: 'https://www.youtube.com/watch?v=YbrFzbGkSjk',
     image: porfolioImage10,
   },
@@ -303,10 +306,13 @@ export const education: TimelineItem[] = [
     date: '2018',
     location: 'Universidad de la Republica (UDELAR), Uruguay',
     title: 'Computer Information Systems Analyst',
-    content: <p>Gaining expertise in algorithms, data structures, and programming. 
-      He delved deep into optimizing performance, understanding operating systems,
-      and mastering software engineering principles. This foundation has equipped 
-      him to excel in the tech realm.</p>,
+    content: (
+      <p>
+        Gaining expertise in algorithms, data structures, and programming. He delved deep into optimizing performance,
+        understanding operating systems, and mastering software engineering principles. This foundation has equipped him
+        to excel in the tech realm.
+      </p>
+    ),
   },
 ];
 
@@ -317,14 +323,16 @@ export const experience: TimelineItem[] = [
     title: 'Software Engineer Consultant',
     content: (
       <>
-        <p>
-          Contracted to enhance development workflows and produce comprehensive documentation for applications.
-        </p>
+        <p>Contracted to enhance development workflows and produce comprehensive documentation for applications.</p>
         <ul>
-          <li><span>• </span>Improved developing pipelines and added hooks to improve code maintainability.</li>
-          <li><span>• </span>Created documentation and generated new developing flows.</li>
+          <li>
+            <span>• </span>Improved developing pipelines and added hooks to improve code maintainability.
+          </li>
+          <li>
+            <span>• </span>Created documentation and generated new developing flows.
+          </li>
         </ul>
-      </>      
+      </>
     ),
   },
   {
@@ -337,12 +345,21 @@ export const experience: TimelineItem[] = [
           Developed solutions mainly for a white label ticket selling company with Js technologies and embedded apps.
         </p>
         <ul>
-          <li><span>• </span>Embed React apps within different webs pages (Angular, React, Wordpress) to buy ticket for concerts or itinerant shows.</li>
-          <li><span>• </span>Integrated different payment platforms such as Stripe, Square, among others.</li>
-          <li><span>• </span>Worked and created pipelines on Heroku and Netlify.</li>
-          <li><span>• </span>Team Leader of the Affinity Group Food & Beverage Community.</li>
+          <li>
+            <span>• </span>Embed React apps within different webs pages (Angular, React, Wordpress) to buy ticket for
+            concerts or itinerant shows.
+          </li>
+          <li>
+            <span>• </span>Integrated different payment platforms such as Stripe, Square, among others.
+          </li>
+          <li>
+            <span>• </span>Worked and created pipelines on Heroku and Netlify.
+          </li>
+          <li>
+            <span>• </span>Team Leader of the Affinity Group Food & Beverage Community.
+          </li>
         </ul>
-      </>      
+      </>
     ),
   },
   {
@@ -352,15 +369,25 @@ export const experience: TimelineItem[] = [
     content: (
       <>
         <p>
-          Technical leader & Architect of RYPT Front End Web app. A web app that
-          lets trainers follow up with their athletes and create workouts, exercises,
-          graphs of performance, and other BI features that are constantly evolving.
+          Technical leader & Architect of RYPT Front End Web app. A web app that lets trainers follow up with their
+          athletes and create workouts, exercises, graphs of performance, and other BI features that are constantly
+          evolving.
         </p>
         <ul>
-          <li><span>• </span>Created from scratch the Front End App using angular 2, evolved and maintained through time to the latest angular version, with Microsoft Azure Docker pipeline.</li>
-          <li><span>• </span>Implemented Stripe payment method.</li>
-          <li><span>• </span>Created a test suite on the Microsoft Azure pipeline with Jest Framework on Puppeteer, a Headless browser.</li>
-          <li><span>• </span>Worked on the Back End based on ExpressJs over NodeJS.</li>
+          <li>
+            <span>• </span>Created from scratch the Front End App using angular 2, evolved and maintained through time
+            to the latest angular version, with Microsoft Azure Docker pipeline.
+          </li>
+          <li>
+            <span>• </span>Implemented Stripe payment method.
+          </li>
+          <li>
+            <span>• </span>Created a test suite on the Microsoft Azure pipeline with Jest Framework on Puppeteer, a
+            Headless browser.
+          </li>
+          <li>
+            <span>• </span>Worked on the Back End based on ExpressJs over NodeJS.
+          </li>
         </ul>
       </>
     ),
@@ -372,12 +399,20 @@ export const experience: TimelineItem[] = [
     content: (
       <>
         <p>
-          Helped to develop different Agile engineering projects for U.S. companies that wanted excellent UX/UI and performance.
+          Helped to develop different Agile engineering projects for U.S. companies that wanted excellent UX/UI and
+          performance.
         </p>
         <ul>
-          <li><span>• </span>Worked on different projects with different technologies such as AngularJS, Angular2+, NodeJs, React, etc</li>
-          <li><span>• </span>Completed detailed programming and development tasks for front end and websites.</li>
-          <li><span>• </span>Leveraged expertise in software design and development with multiple programming languages</li>
+          <li>
+            <span>• </span>Worked on different projects with different technologies such as AngularJS, Angular2+,
+            NodeJs, React, etc
+          </li>
+          <li>
+            <span>• </span>Completed detailed programming and development tasks for front end and websites.
+          </li>
+          <li>
+            <span>• </span>Leveraged expertise in software design and development with multiple programming languages
+          </li>
         </ul>
       </>
     ),
@@ -389,14 +424,24 @@ export const experience: TimelineItem[] = [
     content: (
       <>
         <p>
-          Worked as a Software Engineer developing a Windows client application
-          called Jabber, using the Scrum development process.
+          Worked as a Software Engineer developing a Windows client application called Jabber, using the Scrum
+          development process.
         </p>
         <ul>
-          <li><span>• </span>Learned from top-notch Cisco engineers about software-engineered processes and the product development life cycle.</li>
-          <li><span>• </span>Work on a large-scale Agile engineering project on a highly usable, top- quality enterprise product.</li>
-          <li><span>• </span>Programmed on C# and .NET</li>
-          <li><span>• </span>Workshop of Windows dump file debugging on assembler</li>
+          <li>
+            <span>• </span>Learned from top-notch Cisco engineers about software-engineered processes and the product
+            development life cycle.
+          </li>
+          <li>
+            <span>• </span>Work on a large-scale Agile engineering project on a highly usable, top- quality enterprise
+            product.
+          </li>
+          <li>
+            <span>• </span>Programmed on C# and .NET
+          </li>
+          <li>
+            <span>• </span>Workshop of Windows dump file debugging on assembler
+          </li>
         </ul>
       </>
     ),
@@ -412,17 +457,20 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Aengus Bates - coworker at Cisco',
       text: 'I had the pleasure of working alongside Agustin for six months while he interned at Cisco, Galway. During that time he showed himself to be a talented developer, well capable of delivering quality, tested functionality on time and to spec. He was a strong contributor to the project and as a friendly, outgoing person was also a positive addition to the team.',
-      image: 'https://media.licdn.com/dms/image/D5603AQG38MEQxkl2tg/profile-displayphoto-shrink_100_100/0/1684628999716?e=1703721600&v=beta&t=o0OdV7KbAYnvH5Pk6akF7vmF7WMvridHI_q76lebSsU',
+      image:
+        'https://media.licdn.com/dms/image/D5603AQG38MEQxkl2tg/profile-displayphoto-shrink_100_100/0/1684628999716?e=1703721600&v=beta&t=o0OdV7KbAYnvH5Pk6akF7vmF7WMvridHI_q76lebSsU',
     },
     {
       name: 'Cristina Bermudez',
       text: "During his tenure with RYPT, he consistently showcased exceptional technical prowess, driving key initiatives that bolstered our platform's performance. A true asset to the team!",
-      image: 'https://media.licdn.com/dms/image/C4D03AQEQJhT6wSp6sA/profile-displayphoto-shrink_400_400/0/1602510702551?e=1704931200&v=beta&t=V-nIeaKQYlWNVFGWN-uFHuQ3o8z8GqSY2JaEMy_DmPs',
+      image:
+        'https://media.licdn.com/dms/image/C4D03AQEQJhT6wSp6sA/profile-displayphoto-shrink_400_400/0/1602510702551?e=1704931200&v=beta&t=V-nIeaKQYlWNVFGWN-uFHuQ3o8z8GqSY2JaEMy_DmPs',
     },
     {
       name: 'Johnathan Franco -  Technical Leader',
       text: "His innovative approaches at HALO not only streamlined our processes but also fostered a collaborative environment. His expertise was pivotal in our project's success.",
-      image: 'https://media.licdn.com/dms/image/D4D03AQEcehooSO8C8w/profile-displayphoto-shrink_100_100/0/1679451416466?e=1704931200&v=beta&t=mslaOQNd-QX-Ox_xigwfqQ7Eld80H9UUwkpy4g7N_2I',
+      image:
+        'https://media.licdn.com/dms/image/D4D03AQEcehooSO8C8w/profile-displayphoto-shrink_100_100/0/1679451416466?e=1704931200&v=beta&t=mslaOQNd-QX-Ox_xigwfqQ7Eld80H9UUwkpy4g7N_2I',
     },
   ],
 };
