@@ -278,7 +278,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage9,
   },
   {
-    title: 'Jabber PRT - Ciscto Systems',
+    title: 'Jabber PRT - Cisco Systems',
     description:
       'One of my mains tasks during my internship in Cisco, was to redesign and update the PRT (Problem Resolve Tool) of Jabber',
     url: 'https://www.youtube.com/watch?v=YbrFzbGkSjk',
