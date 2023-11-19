@@ -105,7 +105,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `
-  With over 8 years in full stack development, I've extensively used NodeJS, React, Redux (among others) mastering the 
+  With over 8 years in full stack development, I've extensively used NodeJS, React, Redux (among others technologies) mastering the 
   intricacies of crafting projects from inception, leveraging the latest technologies. My expertise in TypeScript, OOP, 
   and microservices architecture underscores my proficiency. Furthermore, my rich experience with version control systems 
   and adeptness in building responsive, adaptive web applications aligns perfectly with industry best practices. My 
@@ -172,7 +172,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Microsoft Azure',
-        level: 6,
+        level: 7,
       },
     ],
   },
