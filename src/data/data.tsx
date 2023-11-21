@@ -248,7 +248,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'RYPT',
-    description: 'Spearheaded the architecture redesign of the front-end app with angular + redux.',
+    description:
+      'Spearheaded the architecture redesign of the front-end app with angular + redux. Also, developed RESTful APIs in Express.js.',
     url: 'https://www.rypt.app/',
     image: porfolioImage4,
   },
