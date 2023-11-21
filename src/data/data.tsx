@@ -22,7 +22,7 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
@@ -273,8 +273,8 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage6,
   },
   {
-    title: '',
-    description: 'The office',
+    title: 'Stripe Payment',
+    description: 'Implemented stripe payment gateway on RYPT, Spartan, and other projects.',
     url: '',
     image: porfolioImage9,
   },
