@@ -310,7 +310,7 @@ export const portfolioItemsLiveDemos: PortfolioItem[] = [
     url: 'https://coin-rewarding-dapp.vercel.app/',
     image: portfolioLiveDemo1,
   },
-]
+];
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
