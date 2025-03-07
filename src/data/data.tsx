@@ -24,6 +24,7 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import portfolioLiveDemo1 from '../images/portfolio/portfolio-live-demo-1.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import testimonialImageAengus from '../images/testimonials/aengus.jpg';
@@ -302,6 +303,14 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
+export const portfolioItemsLiveDemos: PortfolioItem[] = [
+  {
+    title: 'Coin Rewarding dApp',
+    description: 'A dApp that rewards users with a QUIZ Crypto Token for completing a survey.',
+    url: 'https://coin-rewarding-dapp.vercel.app/',
+    image: portfolioLiveDemo1,
+  },
+]
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
@@ -518,8 +527,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: contact.items[3].href || ''},
-  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/agustin-becerra-gonzalez/'},
-  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
