@@ -24,11 +24,11 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import testimonialImageCristina from '../images/testimonials/cristi.jpg';
-import testimonialImageJohnathan from '../images/testimonials/jona.jpg';
-import testimonialImageAengus from '../images/testimonials/aengus.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import testimonialImageAengus from '../images/testimonials/aengus.jpg';
+import testimonialImageCristina from '../images/testimonials/cristi.jpg';
+import testimonialImageJohnathan from '../images/testimonials/jona.jpg';
 import {
   About,
   ContactSection,
@@ -328,8 +328,8 @@ export const experience: TimelineItem[] = [
     content: (
       <>
         <p>
-          Enhanced development workflows and produced comprehensive documentation for applications,
-          while developing new features.
+          Enhanced development workflows and produced comprehensive documentation for applications, while developing new
+          features.
         </p>
         <ul>
           <li>

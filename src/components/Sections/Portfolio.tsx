@@ -51,7 +51,6 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
     setOpenModal(false);
   }, []); // If setOpenModal never changes, you can leave the dependencies array empty
 
-
   useEffect(() => {
     // Avoid hydration styling errors by setting mobile in useEffect
     if (isMobile) {
@@ -88,16 +87,11 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
           <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
           <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>
         </div>
-        { url && (
+        {url && (
           <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
         )}
       </div>
-      { openModal && (
-        <ModalProps 
-            handleDelete={handleDelete}
-            text="yooo"
-          ></ModalProps>
-      )}
+      {openModal && <ModalProps handleDelete={handleDelete} text="yooo"></ModalProps>}
     </a>
   );
 });

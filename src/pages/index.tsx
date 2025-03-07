@@ -1,4 +1,3 @@
-
 // import Contact from '../components/Sections/Contact';
 
 import dynamic from 'next/dynamic';

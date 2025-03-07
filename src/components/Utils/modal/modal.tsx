@@ -2,15 +2,14 @@ import {Dialog, Transition} from '@headlessui/react';
 import {Fragment, useRef} from 'react';
 
 interface ModalProps {
-    children?: React.ReactNode;
-    handleDelete: () => void;
-    text?: string;
-    title?: string;
+  children?: React.ReactNode;
+  handleDelete: () => void;
+  text?: string;
+  title?: string;
 }
 
 export default function Modal({children, handleDelete, text, title}: ModalProps) {
-
-  const cancelButtonRef = useRef(null)
+  const cancelButtonRef = useRef(null);
 
   return (
     <Transition.Root as={Fragment} show={true}>
@@ -22,8 +21,7 @@ export default function Modal({children, handleDelete, text, title}: ModalProps)
           enterTo="opacity-100"
           leave="ease-in duration-200"
           leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
+          leaveTo="opacity-0">
           <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
         </Transition.Child>
 
@@ -36,8 +34,7 @@ export default function Modal({children, handleDelete, text, title}: ModalProps)
               enterTo="opacity-100 translate-y-0 sm:scale-100"
               leave="ease-in duration-200"
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-              leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            >
+              leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                 <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
@@ -61,8 +58,7 @@ export default function Modal({children, handleDelete, text, title}: ModalProps)
                     className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
                     onClick={() => handleDelete()}
                     ref={cancelButtonRef}
-                    type="button"
-                  >
+                    type="button">
                     Done
                   </button>
                 </div>
@@ -72,5 +68,5 @@ export default function Modal({children, handleDelete, text, title}: ModalProps)
         </div>
       </Dialog>
     </Transition.Root>
-  )
+  );
 }
