@@ -24,6 +24,9 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import testimonialImageCristina from '../images/testimonials/cristi.jpg';
+import testimonialImageJohnathan from '../images/testimonials/jona.jpg';
+import testimonialImageAengus from '../images/testimonials/aengus.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -114,7 +117,7 @@ export const aboutData: About = {
   not just the skills but a seasoned, innovative approach, I'm ready to make a meaningful impact.`,
   aboutItems: [
     {label: 'Location', text: 'Nueva Helvecia, Uruguay', Icon: MapIcon},
-    {label: 'Nationality', text: 'Uruguayian / Spanish', Icon: FlagIcon},
+    {label: 'Nationality', text: 'Uruguayan 🇺🇾 / Spanish 🇪🇸', Icon: FlagIcon},
     {label: 'Interests', text: 'Farming, Blockchain, cooking', Icon: SparklesIcon},
     {label: 'Study', text: 'University of the Republic (UDELAR)', Icon: AcademicCapIcon},
     // {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
@@ -309,7 +312,7 @@ export const education: TimelineItem[] = [
     title: 'Computer Information Systems Analyst',
     content: (
       <p>
-        Gaining expertise in algorithms, data structures, and programming. He delved deep into optimizing performance,
+        Gaining expertise in algorithms, data structures, and programming. I delved deep into optimizing performance,
         understanding operating systems, and mastering software engineering principles. This foundation has equipped him
         to excel in the tech realm.
       </p>
@@ -319,18 +322,24 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'July 2023 - Present',
-    location: 'Criptala - Montevideo, Uruguay',
-    title: 'Software Engineer Consultant',
+    date: 'January 2024 - December 2024',
+    location: 'KTO - Montevideo, Uruguay',
+    title: 'Frontend Engineer',
     content: (
       <>
-        <p>Contracted to enhance development workflows and produce comprehensive documentation for applications.</p>
+        <p>
+          Enhanced development workflows and produced comprehensive documentation for applications,
+          while developing new features.
+        </p>
         <ul>
           <li>
             <span>• </span>Improved developing pipelines and added hooks to improve code maintainability.
           </li>
           <li>
             <span>• </span>Created documentation and generated new developing flows.
+          </li>
+          <li>
+            <span>• </span>Integrated KYC solutions to the FE application to align with license regulations.
           </li>
         </ul>
       </>
@@ -339,7 +348,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'September 2021 - September 2023',
     location: 'Halo Media LLC - New York, USA (remote)',
-    title: 'Software Engineer',
+    title: 'Full Stack Developer',
     content: (
       <>
         <p>
@@ -357,7 +366,7 @@ export const experience: TimelineItem[] = [
             <span>• </span>Worked and created pipelines on Heroku and Netlify.
           </li>
           <li>
-            <span>• </span>Team Leader of the Affinity Group Food & Beverage Community.
+            <span>• </span>Led an Affinity Group Community with more than 10 persons to improve the company culture.
           </li>
         </ul>
       </>
@@ -366,7 +375,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'August 2018 - September 2021',
     location: 'RYPT - Dublin, Ireland',
-    title: 'Full stack Developer & Technical Leader',
+    title: 'Full Stack Developer & Technical Leader',
     content: (
       <>
         <p>
@@ -419,7 +428,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'August 2018 - September 2021',
+    date: 'March 2015 - September 2015',
     location: 'Cisco Systems Inc. - Galway, Ireland',
     title: 'Software Engineer Intern',
     content: (
@@ -458,20 +467,17 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Aengus Bates - coworker at Cisco',
       text: 'I had the pleasure of working alongside Agustin for six months while he interned at Cisco, Galway. During that time he showed himself to be a talented developer, well capable of delivering quality, tested functionality on time and to spec. He was a strong contributor to the project and as a friendly, outgoing person was also a positive addition to the team.',
-      image:
-        'https://media.licdn.com/dms/image/D5603AQG38MEQxkl2tg/profile-displayphoto-shrink_100_100/0/1684628999716?e=1703721600&v=beta&t=o0OdV7KbAYnvH5Pk6akF7vmF7WMvridHI_q76lebSsU',
+      image: testimonialImageAengus,
     },
     {
       name: 'Cristina Bermudez',
       text: "During his tenure with RYPT, he consistently showcased exceptional technical prowess, driving key initiatives that bolstered our platform's performance. A true asset to the team!",
-      image:
-        'https://media.licdn.com/dms/image/C4D03AQEQJhT6wSp6sA/profile-displayphoto-shrink_400_400/0/1602510702551?e=1704931200&v=beta&t=V-nIeaKQYlWNVFGWN-uFHuQ3o8z8GqSY2JaEMy_DmPs',
+      image: testimonialImageCristina,
     },
     {
       name: 'Johnathan Franco -  Technical Leader',
       text: "His innovative approaches at HALO not only streamlined our processes but also fostered a collaborative environment. His expertise was pivotal in our project's success.",
-      image:
-        'https://media.licdn.com/dms/image/D4D03AQEcehooSO8C8w/profile-displayphoto-shrink_100_100/0/1679451416466?e=1704931200&v=beta&t=mslaOQNd-QX-Ox_xigwfqQ7Eld80H9UUwkpy4g7N_2I',
+      image: testimonialImageJohnathan,
     },
   ],
 };
