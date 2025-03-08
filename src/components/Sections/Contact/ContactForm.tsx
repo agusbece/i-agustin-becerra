@@ -32,6 +32,7 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
+      alert('Sorry we don´t have this feature yet! :´(');
       /**
        * This is a good starting point to wire up your form submission logic
        * */

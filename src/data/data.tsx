@@ -78,8 +78,8 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm an Uruguayian based <strong className="text-stone-100">Full Stack Software Engineer</strong>, with
         experience from tech giants to dynamic startups, I combine diverse tech insights into innovative software
-        development. Proficient in Docker, Typescript, React, Angular, Redux, MongoDB among others, and now exploring
-        blockchain, I champion groundbreaking approaches.
+        development. Proficient in Node, Typescript, React, Angular, Redux, among others, and now exploring blockchain,
+        I drive innovation through groundbreaking approaches.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training <strong className="text-stone-100">calisthenic</strong>, petting
@@ -109,7 +109,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `
-  With over 8 years in full stack development, I've extensively used NodeJS, React, Redux (among others technologies) mastering the 
+  With over 10 years in full stack development, I've extensively used NodeJS, React, Redux (among others technologies) mastering the 
   intricacies of crafting projects from inception, leveraging the latest technologies. My expertise in TypeScript, OOP, 
   and microservices architecture underscores my proficiency. Furthermore, my rich experience with version control systems 
   and adeptness in building responsive, adaptive web applications aligns perfectly with industry best practices. My 
@@ -158,7 +158,7 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'Java',
+        name: 'Solidity',
         level: 6,
       },
     ],
@@ -226,8 +226,8 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'Solidity',
-        level: 6,
+        name: 'PC Infraestructure',
+        level: 8,
       },
     ],
   },
@@ -351,6 +351,19 @@ export const experience: TimelineItem[] = [
             <span>• </span>Integrated KYC solutions to the FE application to align with license regulations.
           </li>
         </ul>
+      </>
+    ),
+  },
+  {
+    date: 'October 2023 - Present',
+    location: 'Criptala - Montevideo, Uruguay',
+    title: 'Software Engineer Consultant',
+    content: (
+      <>
+        <p>
+          Helped to analyze the arcthitecture of the product, possible security flags as well improvements on the
+          pipelines.
+        </p>
       </>
     ),
   },
@@ -497,28 +510,33 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out to me via email or connect with me on LinkedIn.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'becerra.gonzalez.agustin@gmail.com',
+      href: 'mailto:becerra.gonzalez.agustin@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
+      text: 'Nueva Helvecia, Colonia, Uruguay',
       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: 'agustin-becerra-gonzalez',
+      href: 'https://www.linkedin.com/in/agustin-becerra-gonzalez/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
+      text: 'agusbece',
       href: 'https://github.com/agusbece',
     },
+    // {
+    //   type: ContactType.Instagram,
+    //   text: '@agusbecce',
+    //   href: 'https://www.instagram.com/agusbecce/',
+    // },
   ],
 };
 
