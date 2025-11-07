@@ -331,6 +331,34 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'May 2025 - November 2025',
+    location: 'KTO - Montevideo, Uruguay',
+    title: 'Full Stack Engineer',
+    content: (
+      <>
+        <p>
+          Modernized Foodgawker by decoupling the legacy WordPress site into a headless setup: a Next.js frontend on
+          Vercel consuming custom WordPress REST APIs. Delivered faster pages via SSR/SSG/ISR and Cloudflare edge
+          caching while keeping the existing WP admin intact.
+        </p>
+        <ul>
+          <li>
+            <span>• </span>Designed the data flow and auth: Cloudflare → Vercel Edge → Next.js Server Components with
+            JWT-backed user actions; WordPress remains source of truth.
+          </li>
+          <li>
+            <span>• </span>Built a WP plugin to manage the endpoints and integrated SphinxSearch for relevance-ranked,
+            faceted search.
+          </li>
+          <li>
+            <span>• </span>Set up environments & CI/CD: staging→prod with Vercel builds and protected releases; WP
+            deploys via DreamHost/SFTP with DB migrations.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     date: 'January 2024 - December 2024',
     location: 'KTO - Montevideo, Uruguay',
     title: 'Frontend Engineer',
