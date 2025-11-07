@@ -332,7 +332,7 @@ export const education: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'May 2025 - November 2025',
-    location: 'KTO - Montevideo, Uruguay',
+    location: 'Foodgawker (Amplify Tech Labs) - Chicago, USA',
     title: 'Full Stack Engineer',
     content: (
       <>
@@ -353,6 +353,9 @@ export const experience: TimelineItem[] = [
           <li>
             <span>• </span>Set up environments & CI/CD: staging→prod with Vercel builds and protected releases; WP
             deploys via DreamHost/SFTP with DB migrations.
+          </li>
+          <li>
+            <span>• </span>Implemented a new architecture for the frontend using Next.js, React.
           </li>
         </ul>
       </>
