@@ -331,7 +331,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'May 2025 - November 2025',
+    date: 'May 2025 - Present',
     location: 'Foodgawker (Amplify Tech Labs) - Chicago, USA',
     title: 'Full Stack Engineer',
     content: (
