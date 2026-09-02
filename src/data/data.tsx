@@ -398,6 +398,19 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
+    date: 'October 2023 - December 2025',
+    location: 'Criptala - Montevideo, Uruguay',
+    title: 'Software Engineer Consultant',
+    content: (
+      <>
+        <p>
+          Helped to analyze the arcthitecture of the product, possible security flags as well improvements on the
+          pipelines.
+        </p>
+      </>
+    ),
+  },
+  {
     date: 'January 2024 - December 2024',
     location: 'KTO - Montevideo, Uruguay',
     title: 'Frontend Engineer',
