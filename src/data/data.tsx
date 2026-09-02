@@ -331,6 +331,42 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'February 2026 - Present',
+    location: 'AG Software - Nueva Helvecia, Uruguay',
+    title: 'Founder & Lead Engineer — Remi Wallet',
+    content: (
+      <>
+        <p>
+          Built{' '}
+          <a href="https://www.remiwallet.app" rel="noopener noreferrer" target="_blank">
+            Remi Wallet
+          </a>
+          , a USDC remittance product for LATAM corridors, under a Hedera ecosystem grant. Live on mainnet with a fiat
+          off-ramp through a regional payout partner across six countries.
+        </p>
+        <ul>
+          <li>
+            <span>• </span>NestJS API over Prisma/PostgreSQL with BullMQ on Redis, deployed on Fly.io; Next.js 14 App
+            Router frontend as a PWA.
+          </li>
+          <li>
+            <span>• </span>Solidity smart contract on Hedera mainnet moving USDC through the token-service precompile,
+            with session keys under on-chain spending limits and a 2-of-3 threshold key for admin operations.
+          </li>
+          <li>
+            <span>• </span>Designed the payout state machine: partner webhooks drive fourteen external states onto
+            eleven internal ones, HMAC-verified, deduplicated at the schema level and idempotent so a duplicate webhook
+            cannot double-spend.
+          </li>
+          <li>
+            <span>• </span>Integrated MetaMap KYC with OCR profile extraction; structured logging with PII redaction,
+            immutable audit log and a six-job CI pipeline.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     date: 'May 2025 - Present',
     location: 'Foodgawker (Amplify Tech Labs) - Chicago, USA',
     title: 'Full Stack Engineer',
@@ -382,19 +418,6 @@ export const experience: TimelineItem[] = [
             <span>• </span>Integrated KYC solutions to the FE application to align with license regulations.
           </li>
         </ul>
-      </>
-    ),
-  },
-  {
-    date: 'October 2023 - Present',
-    location: 'Criptala - Montevideo, Uruguay',
-    title: 'Software Engineer Consultant',
-    content: (
-      <>
-        <p>
-          Helped to analyze the arcthitecture of the product, possible security flags as well improvements on the
-          pipelines.
-        </p>
       </>
     ),
   },
