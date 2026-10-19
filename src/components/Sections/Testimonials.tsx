@@ -3,9 +3,10 @@ import Image from 'next/image';
 import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {isApple, isMobile} from '../../config';
-import {SectionId, testimonial} from '../../data/data';
+import {SectionId} from '../../data/data';
 import {Testimonial as TestimonialType} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
+import {useLocaleData} from '../../hooks/useLocale';
 import useWindow from '../../hooks/useWindow';
 import QuoteIcon from '../Icon/QuoteIcon';
 import Section from '../Layout/Section';
@@ -20,6 +21,7 @@ const Testimonials: FC = memo(() => {
 
   const {width} = useWindow();
 
+  const {testimonial} = useLocaleData();
   const {imageSrc, testimonials} = testimonial;
 
   const resolveSrc = useMemo(() => {
@@ -27,7 +29,6 @@ const Testimonials: FC = memo(() => {
     return typeof imageSrc === 'string' ? imageSrc : imageSrc.src;
   }, [imageSrc]);
 
-  // Mobile iOS doesn't allow background-fixed elements
   useEffect(() => {
     setParallaxEnabled(!(isMobile && isApple));
   }, []);
@@ -65,7 +66,6 @@ const Testimonials: FC = memo(() => {
 
   useInterval(next, 10000);
 
-  // If no testimonials, don't render the section
   if (!testimonials.length) {
     return null;
   }
@@ -85,10 +85,14 @@ const Testimonials: FC = memo(() => {
               className="no-scrollbar flex w-full touch-pan-x snap-x snap-mandatory gap-x-6 overflow-x-auto scroll-smooth"
               onScroll={handleScroll}
               ref={scrollContainer}>
-              {testimonials.map((testimonial, index) => {
+              {testimonials.map((testimonialItem, index) => {
                 const isActive = index === activeIndex;
                 return (
-                  <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
+                  <TestimonialCard
+                    isActive={isActive}
+                    key={`${testimonialItem.name}-${index}`}
+                    testimonial={testimonialItem}
+                  />
                 );
               })}
             </div>
@@ -114,7 +118,7 @@ const Testimonials: FC = memo(() => {
   );
 });
 
-const Testimonial: FC<{testimonial: TestimonialType; isActive: boolean}> = memo(
+const TestimonialCard: FC<{testimonial: TestimonialType; isActive: boolean}> = memo(
   ({testimonial: {text, name, image}, isActive}) => (
     <div
       className={classNames(

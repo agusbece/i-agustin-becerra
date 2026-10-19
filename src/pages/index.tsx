@@ -1,5 +1,3 @@
-// import Contact from '../components/Sections/Contact';
-
 import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
 
@@ -11,12 +9,13 @@ import Hero from '../components/Sections/Hero';
 import Portfolio from '../components/Sections/Portfolio';
 import Resume from '../components/Sections/Resume';
 import Testimonials from '../components/Sections/Testimonials';
-import {homePageMeta} from '../data/data';
+import {useLocaleData} from '../hooks/useLocale';
 
 // eslint-disable-next-line react-memo/require-memo
 const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
 
 const Home: FC = memo(() => {
+  const {homePageMeta} = useLocaleData();
   const {title, description} = homePageMeta;
   return (
     <Page description={description} title={title}>

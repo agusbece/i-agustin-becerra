@@ -4,11 +4,15 @@ import {useRouter} from 'next/router';
 import {memo, PropsWithChildren} from 'react';
 
 import {HomepageMeta} from '../../data/dataDef';
-// import resumeImage from '../../images/resume-screenshot.png';
+
+const SITE_URL = 'https://agustin-becerra.vercel.app';
 
 const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, description}) => {
-  const {asPath: pathname} = useRouter();
-  const webThumbnailImage = `https://agustin-becerra.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofilepic.7d8610ec.jpg&w=1080&q=75`;
+  const {asPath: pathname, locale} = useRouter();
+  const webThumbnailImage = `${SITE_URL}/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofilepic.7d8610ec.jpg&w=1080&q=75`;
+
+  const localePath = locale && locale !== 'en' ? `/${locale}` : '';
+  const canonicalUrl = `${SITE_URL}${localePath}${pathname}`;
 
   return (
     <>
@@ -16,8 +20,13 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <title>{title}</title>
         <meta content={description} name="description" />
 
-        {/* several domains list the same content, make sure google knows we mean this one. */}
-        <link href={`https://agustin-becerra.vercel.app${pathname}`} key="canonical" rel="canonical" />
+        {/* Canonical */}
+        <link href={canonicalUrl} key="canonical" rel="canonical" />
+
+        {/* hreflang alternates for SEO */}
+        <link href={`${SITE_URL}${pathname}`} hrefLang="en" key="hreflang-en" rel="alternate" />
+        <link href={`${SITE_URL}/es${pathname}`} hrefLang="es" key="hreflang-es" rel="alternate" />
+        <link href={`${SITE_URL}${pathname}`} hrefLang="x-default" key="hreflang-default" rel="alternate" />
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -27,7 +36,8 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={webThumbnailImage} property="og:image" />
-        <meta content={`https://agustin-becerra.vercel.app${pathname}`} property="og:url" />
+        <meta content={canonicalUrl} property="og:url" />
+        <meta content={locale || 'en'} property="og:locale" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}
         <meta content={title} name="twitter:title" />

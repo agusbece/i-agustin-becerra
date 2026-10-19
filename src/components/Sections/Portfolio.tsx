@@ -4,17 +4,20 @@ import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 
 import {isMobile} from '../../config';
-import {portfolioItems, portfolioItemsLiveDemos, SectionId} from '../../data/data';
+import {SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
+import {useLocaleData, useTranslations} from '../../hooks/useLocale';
 import Section from '../Layout/Section';
 import ModalProps from '../Utils/modal/modal';
 
 const Portfolio: FC = memo(() => {
+  const {portfolioItems, portfolioItemsLiveDemos} = useLocaleData();
+  const t = useTranslations();
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
+        <h2 className="self-center text-xl font-bold text-white">{t.checkOutWork}</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
@@ -33,7 +36,7 @@ const Portfolio: FC = memo(() => {
         </div>
       </div>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">or some Live Demos</h2>
+        <h2 className="self-center text-xl font-bold text-white">{t.orLiveDemos}</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItemsLiveDemos.map((item, index) => {
             const {title, image} = item;
@@ -64,14 +67,12 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
   const linkRef = useRef<HTMLAnchorElement>(null);
   const [openModal, setOpenModal] = useState(false);
 
-  // Define your callback using useCallback and specify dependencies
   const handleDelete = useCallback(() => {
     console.log(`yo brodiss`);
     setOpenModal(false);
-  }, []); // If setOpenModal never changes, you can leave the dependencies array empty
+  }, []);
 
   useEffect(() => {
-    // Avoid hydration styling errors by setting mobile in useEffect
     if (isMobile) {
       setMobile(true);
     }
@@ -84,7 +85,7 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
         event.preventDefault();
         setShowOverlay(!showOverlay);
       } else if (url === '') {
-        event.preventDefault(); // Prevent the default action if url is empty
+        event.preventDefault();
       }
     },
     [mobile, showOverlay, url],
