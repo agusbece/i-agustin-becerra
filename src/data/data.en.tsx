@@ -47,8 +47,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Agustin Becerra resume',
-  description: 'This is Agustin Becerra Software Developer page resume',
+  title: 'Agustín Becerra — Full Stack Software Engineer',
+  description: 'Portfolio and résumé of Agustín Becerra, a Uruguayan-based Full Stack Software Engineer working with Node, TypeScript, React, and more.',
 };
 
 /**
@@ -76,13 +76,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm an Uruguayian based <strong className="text-stone-100">Full Stack Software Engineer</strong>, with
+        I'm a Uruguayan-based <strong className="text-stone-100">Full Stack Software Engineer</strong>, with
         experience from tech giants to dynamic startups, I combine diverse tech insights into innovative software
         development. Proficient in Node, Typescript, React, Angular, Redux, among others, and now exploring blockchain,
         I drive innovation through groundbreaking approaches.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training <strong className="text-stone-100">calisthenic</strong>, petting
+        In my free time, you can catch me training <strong className="text-stone-100">calisthenics</strong>, petting
         my <strong className="text-stone-100">dogs</strong>, or exploring this beautiful{' '}
         <strong className="text-stone-100">world</strong>.
       </p>
@@ -587,7 +587,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Location,
       text: 'Nueva Helvecia, Colonia, Uruguay',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      href: 'https://www.google.com/maps/search/?api=1&query=Nueva+Helvecia%2C+Uruguay',
     },
     {
       type: ContactType.LinkedIn,

@@ -1,7 +1,7 @@
 import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
+import {FC, memo, MouseEvent, RefObject, useCallback, useEffect, useRef, useState} from 'react';
 
 import {isMobile} from '../../config';
 import {SectionId} from '../../data/data';
@@ -64,8 +64,9 @@ export default Portfolio;
 const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
-  const linkRef = useRef<HTMLAnchorElement>(null);
+  const overlayRef = useRef<HTMLElement>(null);
   const [openModal, setOpenModal] = useState(false);
+  const hasUrl = Boolean(url);
 
   const handleDelete = useCallback(() => {
     console.log(`yo brodiss`);
@@ -77,41 +78,56 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       setMobile(true);
     }
   }, []);
-  useDetectOutsideClick(linkRef, () => setShowOverlay(false));
+  useDetectOutsideClick(overlayRef, () => setShowOverlay(false));
 
   const handleItemClick = useCallback(
     (event: MouseEvent<HTMLElement>) => {
       if (mobile && !showOverlay) {
         event.preventDefault();
-        setShowOverlay(!showOverlay);
-      } else if (url === '') {
-        event.preventDefault();
+        setShowOverlay(true);
       }
     },
-    [mobile, showOverlay, url],
+    [mobile, showOverlay],
   );
 
-  return (
-    <a
-      className={classNames(
-        'absolute inset-0 h-full w-full  bg-gray-900 transition-all duration-300',
-        {'opacity-0 hover:opacity-80': !mobile},
-        showOverlay ? 'opacity-80' : 'opacity-0',
-      )}
-      href={url || undefined}
-      onClick={handleItemClick}
-      ref={linkRef}
-      target="_blank">
+  const overlayClassName = classNames(
+    'absolute inset-0 h-full w-full  bg-gray-900 transition-all duration-300',
+    {'opacity-0 hover:opacity-80': !mobile},
+    showOverlay ? 'opacity-80' : 'opacity-0',
+  );
+
+  const content = (
+    <>
       <div className="relative h-full w-full p-4">
         <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto overscroll-contain">
           <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
           <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>
         </div>
-        {url && (
+        {hasUrl && (
           <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
         )}
       </div>
       {openModal && <ModalProps handleDelete={handleDelete} text="yooo"></ModalProps>}
-    </a>
+    </>
+  );
+
+  if (hasUrl) {
+    return (
+      <a
+        className={overlayClassName}
+        href={url}
+        onClick={handleItemClick}
+        ref={overlayRef as RefObject<HTMLAnchorElement>}
+        rel="noopener noreferrer"
+        target="_blank">
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <div className={overlayClassName} onClick={handleItemClick} ref={overlayRef as RefObject<HTMLDivElement>}>
+      {content}
+    </div>
   );
 });
