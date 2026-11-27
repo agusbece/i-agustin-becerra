@@ -36,8 +36,8 @@ import {
  * Metadatos de la página
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Agustín Becerra - Currículum',
-  description: 'Página de currículum de Agustín Becerra, Desarrollador de Software',
+  title: 'Agustín Becerra — Ingeniero de Software Full Stack',
+  description: 'Currículum y portfolio de Agustín Becerra, Ingeniero de Software Full Stack uruguayo, con experiencia en Node, TypeScript, React y más.',
 };
 
 /**
@@ -574,7 +574,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Location,
       text: 'Nueva Helvecia, Colonia, Uruguay',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      href: 'https://www.google.com/maps/search/?api=1&query=Nueva+Helvecia%2C+Uruguay',
     },
     {
       type: ContactType.LinkedIn,

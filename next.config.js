@@ -31,6 +31,16 @@ const nextConfig = {
     defaultLocale: 'en',
     localeDetection: false,
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{type: 'host', value: 'agustin-becerra.vercel.app'}],
+        destination: 'https://agustin-becerra.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
